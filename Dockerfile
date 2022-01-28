@@ -1,8 +1,8 @@
 FROM debian:stretch-slim AS downloader
 
-ARG SERVER_VER="1423"
-ARG SERVER_VER_INC="042"
-ARG TMODLOADER_VERSION="v0.11.8.5"
+ARG SERVER_VER="1353"
+ARG SERVER_VER_INC="043"
+ARG TMODLOADER_VERSION="v0.11.8.6"
 
 RUN apt-get update && \
     apt-get install -y unzip curl
@@ -18,7 +18,7 @@ RUN curl -L \
 
 FROM debian:stretch-slim AS runner
 
-ARG SERVER_VER="1423"
+ARG SERVER_VER="1353"
 ARG UID="999"
 
 ENV INSTALL_LOC="/terraria"
