@@ -9,7 +9,7 @@ RUN apt-get update && \
 
 RUN curl -L \
         -o /tmp/terrariaServer.zip \
-        https://terraria.org/api/download/pc-dedicated-server/terraria-server-${SERVER_VER}.zip && \
+        https://github.com/gongoh/terraria-1.3.5.3-server-linux/releases/download/terraria-1.3.5.3-server/terraria-server-1353.zip && \
     curl -L \
         -o /tmp/tModLoader.zip \
         https://github.com/tModLoader/tModLoader/releases/download/${TMODLOADER_VERSION}/tModLoader.Linux.${TMODLOADER_VERSION}.zip && \
